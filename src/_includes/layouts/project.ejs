@@ -1,0 +1,27 @@
+---
+layout: layouts/base.ejs
+---
+
+<div class="container mx-auto px-4">
+    <h1 class="font-bold text-primary text-4xl"><%= title %></h1>
+    <p class="mt-6 text-gray-700">Tap or click on photo to open in it's own page.</p>
+    <div class="fourps mt-16">
+        <a href=" <%= img1L %>">
+            <img src=" <%= img1 %>" alt="" srcset="" class=" w-full">
+        </a>
+
+        <a href=" <%= img2L %>">
+            <img src=" <%= img2 %>" alt="" srcset="" class=" w-full mt-8">
+        </a>
+
+        <a href=" <%= img3L %>">
+            <img src=" <%= img3 %>" alt="" srcset="" class=" w-full mt-8">
+        </a>
+
+        <a href=" <%= img4L %>">
+            <img src=" <%= img4 %>" alt="" srcset="" class=" w-full mt-8">
+        </a>
+    </div>
+</div>
+
+<script src="../js/layout.js"></script>
