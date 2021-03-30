@@ -106,7 +106,18 @@ title: LPS Pavement Company
   <div id="peek">
     <h2 class=" text-3xl font-semibold">Project Gallery Peek</h2>
 
-
+    <% for(var i = 0; i < 5; i++){ %>
+      <div class=" mt-10 mySlides">
+          <a href=" <%= collections.projects[i].data.linkTo %>">
+            <img src=" <%= collections.projects[i].data.demoImg %>" alt="" class=" w-full">
+            <p class=" text-gray-700 mt-6"> <%= collections.projects[i].data.title %></p>
+          </a>
+      </div>
+      <% } %>
+      <div class="btns flex justify-between h-24 mt-8">
+        <div class=" w-5/12 bg-gray-50 py-6 px-4 h-full flex items-center justify-center cursor-pointer" onclick="plusSlides(-1)"><div class="text-primary">Prev.</div></div>
+        <div class=" w-5/12 bg-gray-50 py-6 px-4 h-full flex items-center justify-center cursor-pointer" onclick="plusSlides(1)"><div class=" text-primary">Next</div></div>
+      </div>
   </div>
 
   <div class="flex justify-center mt-24 mb-24">
@@ -227,3 +238,4 @@ title: LPS Pavement Company
 </div>
 
 <script src="./js/layout.js"></script>
+<script src="./js/index-slider.js"></script>

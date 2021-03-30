@@ -4,6 +4,12 @@ title: Project Gallery - LPS Pavement Company
 
 <div class="container mx-auto px-4">
     <h1 class="font-bold text-primary text-4xl mb-24 mt-10">Project Gallery</h1>
+
+    <% for(var i = 0; i < 5; i++){ %>
+         <div class=" mt-10">
+             <a href=" <%= collections.projects[i].data.linkTo %>" class=" text-gray-800 text-2xl"><span class=" text-3xl text-primary">0<%= i + 1 %></span> <%= collections.projects[i].data.title %></a>
+         </div>
+         <% } %>
 </div>
 
 <script src="../js/layout.js"></script>
