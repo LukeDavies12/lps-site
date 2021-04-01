@@ -2,13 +2,12 @@
 layout: layouts/base.ejs
 ---
 
-<article>
-  <header>
-    <h1 class="text-center font-bold text-3xl text-gray-800"><%= title %></h1>
-    <div class="text-center text-sm mb-8">
-      <%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %>
-    </div>
-  </header>
-
-  <section class="content"><%- content %></section>
-</article>
+<div class="container mx-auto px-4">
+  <h1 class="font-bold text-primary text-4xl"><%= title %></h1>
+  <div class="text-sm mb-8 mt-2">
+    <%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %>
+  </div>
+  <img src="<%= imgUrl %>" alt="asdf" class=" w-full mx-auto lg:w-1/2 mt-8 mb-12">
+  <div class=" mb-12"><%- content %></div>
+  <a href=" <%= gallLink %>" class=" text-primary font-medium">See more photos of this project</a>
+</div>
